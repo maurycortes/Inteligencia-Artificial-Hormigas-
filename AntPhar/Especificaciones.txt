@@ -1,0 +1,32 @@
+I. Especifacion de orden de datos de entrada de maquinas, operaciones y trabajos:
+primera linea contiene id de maquinas separado por comas
+despues de leer maquinas, la siguiente linea tendra la cantidad de trabajos ntrabajos
+para 0 hasta ntrabajos-1 leer lo siguiente
+	id del trabajo j[i]
+	noperaciones: cantidad de operaciones para trabajo j[i]
+	para 0 hasta noperaciones-1 leer lo siguiente:
+		leer id de operaciones o[i]
+		tiempo para realizar operaciones o[i]
+		leer grado de dependencia
+		maquina m[i] donde se debe realizar operaciones o[i]
+Ejemplo:
+m1,m2,m3
+1
+j1
+2
+t1
+1
+0
+m2
+t2
+2
+1
+m1
+
+II. Especificacion de orden de datos para generar casos estocasticamente utilizando generarcaso.py
+	Ingresar nombre del caso (preferiblemente casorand)
+	Ingresar cantidad maxima de maquinas maxmaquinas
+	Ingresar cantidad maxima de trabajos maxtrabajos
+	Ingresar cantidad maxima de operaciones maxoperaciones por trabajo
+	Ingresar limite de tiempo maximo para cada opreacion maxtiempo
+	El programa generara un archivo de texto utilizando el nombre especificado siguiendo la especificacion de datos en seccion I
